@@ -23,3 +23,13 @@ Use slapcat utility from OpenLDAP to create a backup file
 (or)
 /appl/openldap/bin/ldapsearch -VV
 ```
+
+```sh
+# How to generate password for slapd.conf file:
+/appl/openldap/sbin/slappasswd
+```
+
+```sh
+# Update slapd.conf:
+./slaptest -f  /appl/openldap/etc/openldap/slapd.conf -F /appl/openldap/etc/openldap/slapd.d
+```
