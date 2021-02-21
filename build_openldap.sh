@@ -1,5 +1,17 @@
 #!/usr/bin/env bash
 
+# Configuration and Make steps for openldap
+#
+# --enable-overlays       enable all available overlays
+# --enable-static         build static libraries
+# --enable-shared         build shared libraries
+# --enable-bdb            enable Berkeley DB backend
+# --enable-debug          enable debugging
+# --enable-dynamic        enable linking built binaries with dynamic libs
+# --enable-syslog         enable syslog support
+# make test will run all openldap predefined test cases, for around 30 to 40 minutes.
+
+
 OPENLDAP_REL_VER=2.4.46
 PREFIX=/appl/openldap 
 
